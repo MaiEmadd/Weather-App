@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <link rel="icon" href="images/icon.png" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/responsive.css" />
+
+    </head>
+    <body>
+        <div class="sm-bg"></div>
+
+
+        <header class="header" id="to-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg py-2">
+                  <a class="navbar-brand text-white" href="#">
+                    <img src="images/logo.png" class="logo img-fluid" alt=""> Weather
+                  </a>
+                  <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active home" aria-current="page" href="#Home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Search">Search</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Mobile">Mobile App</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Subscribe">Subscribe</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+                <div class="header-content my-5 py-2" id="About">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="header-info">
+                                <h2 class="mb-4">Weather App</h2>
+                                <p>Having an up to date information about the weather helps us to take well-read decisions. These weather apps constantly update the forecasts for a day or hour or sometimes for even a minute. These can be simply termed as the compact weather devices, as they do not only tell about the temperature of that specific region instead they can describe the accurate time of the sunrise and sunset, the time of the rainfall, humidity levels, etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="header-img">
+                                <img src="images/raining-animate-1.svg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="display-temp mb-5">
+            <div class="container">
+
+                <div class="search m-auto" id="Search">
+                  <input type="text" class="w-100" style="font-family:Arial, FontAwesome" placeholder="&#xF002; Search City..">
+                </div>
+
+                <div class="temp-cards d-flex mt-5">
+                    <!-- Today Card -->
+                    <div class="temp-card">
+                        <div class="day-date d-flex justify-content-between">
+                            <p id="today"></p>
+                            <p id="today-date"></p>
+                        </div>
+
+                        <div class="temp-datails">
+
+                            <p id="location" class="mb-3"></p>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h2 id="today-degree" class="d-inline-block"></h2>
+                                    <h2 class="d-inline-block"><sup>o</sup>C</h2>                
+                                </div>
+                                <img  id="today-icon" width="90px">
+                            </div>
+
+                            <p id="today-description"></p>
+                            <div class="details">
+                                <i class="fas fa-umbrella pe-1"></i>
+                                <span id="humidty"></span> <span>%</span>
+
+                                <i class="fas fa-wind ps-3 pe-1"></i>
+                                <span id="wind"></span> <span>km/h</span>
+
+                                <i class="far fa-compass ps-3 pe-1"></i>
+                                <span id="compass"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Next Days Cards -->
+                    <!--1-- -->
+                    <div class="temp-card text-center shadow">
+                        <div class="day-date d-flex justify-content-between">
+                            <p class="nextDay"></p>
+                            <p class="nextDate"></p>
+                        </div>
+    
+                        <div class="temp-datails">
+                            <div>
+                                <img class="nextDay-icon" width="90"/>
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2>
+                            <h2 class="d-inline-block"><sup> o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description"></p>
+                        </div>
+                    </div>
+
+                    <!-- 2-- -->
+                    <div class="temp-card text-center shadow">
+                        <div class="day-date d-flex justify-content-between">
+                            <p class="nextDay"></p>
+                            <p class="nextDate"></p>
+                        </div>
+    
+                        <div class="temp-datails">
+                            <div>
+                                <img class="nextDay-icon" width="90"/>
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2> <h2 class="d-inline-block"><sup> o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="download-app  py-5 " id="Mobile">
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <img src="images/download.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="text-center mt-5">
+                            <h4 class="main-color mb-4">Mobile App</h4>
+                            <p class="mb-4">This weather app is one of best free weather apps with full features:
+                                <br>
+                                Local weather weather map (weather map service) and weather widgets.
+                            </p>
+                            <div class="download-btn mt-5">
+                                <button class="btn  me-2">Download Android</button>
+                                <button class="btn ">Download iOS</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="subscribe py-5" id="Subscribe">
+            <div class="container py-5">
+                <div class="row justify-content-center align-items-center">
+                    
+
+                    <div class="col-lg-8 text-center">
+                        <div>
+                            <h4>Subscribe</h4>
+                            <p>Get daily weather updates, quotes & more..</p>
+                            <input type="text" id="emailInput" class="w-75" style="font-family:Arial, FontAwesome" placeholder="&#xf0e0;  Enter Your Email To Subscribe..">
+
+                            <br>
+                            <div id="emailInputAlert" class="d-none text-danger my-3">
+                                Invalid Email Address!
+                            </div>
+                            <button class="btn mt-4 " id="subsBtn">Subscribe</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <img src="images/subscribe.png" class="img-fluid ms-5" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="success-subscribe">
+                <div class="success-subscribe-box text-center shadow">
+                    <img src="images/submit-lightbox.svg"  width="220px" height="220px">
+                    <h4>Congratulations!</h4>
+                    <p>You can now check your email
+                        to verify your account</p>
+                    <button class="btn" id="closebtn">Close</button>    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footer">
+            <div class="container text-center text-white">
+                <p>Copyright &copy; 2022 Designed by Mai Emad. All rights reserved</p>
+                <div class="socialMediaIcons ">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-google-plus"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="to-top-arrow">
+            <a href="#to-top" class="text-decoration-none text-white">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+       
+    
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
